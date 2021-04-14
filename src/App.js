@@ -1,5 +1,4 @@
 import {useState, useRef} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import firebase from 'firebase/app';
@@ -105,7 +104,7 @@ function ChatMessage(props){
 
   return(
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
+      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt="userpicture" />
       <p>{text}</p>
     </div>
   )
