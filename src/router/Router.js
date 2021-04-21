@@ -1,9 +1,9 @@
-import Inicio from "paginas/Inicio";
-import Salas from "paginas/Salas";
-import Videojuegos from "paginas/Videojuegos";
-import Programacion from "paginas/Programacion";
-import Futbol from "paginas/Futbol";
-import Error from "paginas/Error";
+import Inicio from "pages/Inicio";
+import Salas from "pages/Salas";
+import Series_Peliculas from "pages/Series_Peliculas";
+import Programacion from "pages/Programacion";
+import Futbol from "pages/Futbol";
+import ErrorComponent from "pages/Error";
 import LayoutPrincipal from "components/Layout/LayoutPrincipal";
 import LayoutChat from "components/Layout/LayoutChat";
 import LayoutSala from "components/Layout/LayoutSala";
@@ -22,9 +22,9 @@ export const rutas = [
         exact: true
     },
     {
-        path: "/videojuegos",
+        path: "/series_peliculas",
         layout: LayoutChat,
-        component: Videojuegos,
+        component: Series_Peliculas,
         exact: true
     },
     {
@@ -42,7 +42,7 @@ export const rutas = [
     {
         path: "*",
         layout: LayoutPrincipal,
-        component: Error,
+        component: ErrorComponent,
         exact: true
     }
 
