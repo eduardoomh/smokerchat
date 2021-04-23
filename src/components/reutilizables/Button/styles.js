@@ -10,7 +10,7 @@ export const ButtonStyle = styled.button`
     height: 2rem;
     border-radius: 3px;
     padding: .5rem;
-    transition: background-color .4s ease-in-out;
+    transition: .4s ease-in-out;
 
 
     ${props => props.size === 'big' && css`
@@ -24,6 +24,7 @@ export const ButtonStyle = styled.button`
     &:hover{
         background-color: var(--fifth);
         cursor: pointer;
+        transform: scale(1.1,1.1);
     }
 
 `;

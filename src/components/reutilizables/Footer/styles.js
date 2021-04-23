@@ -7,6 +7,7 @@ export const FooterStyle = styled.footer`
     align-items: center;
     background-color: var(--third);
     min-height: 10rem;
+    box-shadow: 1px 1px 1px #e0dcdc;
 
     p{
         font-size: 1.2rem;

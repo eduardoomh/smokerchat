@@ -10,7 +10,7 @@ export default function LayoutChat(props){
 
     return(
         <DivContainer>
-            <Menu />
+            <Menu path={history.location.pathname} />
             <div>
                 {children}
             </div>

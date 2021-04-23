@@ -20,7 +20,7 @@ export default function useFirebase(){
 
     function signOut(){
         auth.signOut()
-        if(!user) history.push("/");
+         history.push("/");
     }
 
     return{signIn, signOut, user, firestore, useCollectionData, auth, firebase}

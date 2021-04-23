@@ -6,7 +6,7 @@ export const LiStyle = styled.li`
     justify-content: flex-start;
     background-color: transparent;
     margin: 0;
-    padding: 1rem 0;
+    padding: 1rem .5rem;
 
     div{
         display: flex;

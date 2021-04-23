@@ -9,12 +9,18 @@ export const Header = styled.header`
     background-color: var(--third);
     margin: 0;
     position: fixed;
+    box-shadow: 1px 1px 1px #e0dcdc;
+    z-index: 10;
 
     p{
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: inherit;
+
+        a{
+            color: inherit;
+        }
     }
 
     div{
