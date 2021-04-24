@@ -5,6 +5,10 @@ export const HeaderStyle = styled.header`
     grid-template-columns: 15rem 1fr 8rem;
     grid-template-rows: 1fr;
     min-height: 4rem;
+    min-width: 100vw;
+    max-width: 100vw;
+    background-color: white;
+
 
     p{
         display: flex;

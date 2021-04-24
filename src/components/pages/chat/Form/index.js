@@ -31,8 +31,9 @@ export default function Form(props){
         }
     }, [path])
 
-    const sendMessage = async (e) => {
+    const sendMessage = async (e) => { 
         e.preventDefault()
+        if(message === '') return null;
         const collectionRef = firestore.collection(collectionName);
         const {uid, photoURL} = auth.currentUser;
 

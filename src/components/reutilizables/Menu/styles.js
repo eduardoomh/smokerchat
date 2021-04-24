@@ -4,11 +4,12 @@ export const Header = styled.header`
     display: grid;
     grid-template-columns: 4rem 1fr 8rem;
     grid-template-rows: 1fr;
+    position: fixed;
     min-height: 3rem;
+    max-height: 3rem;
     width: 100vw;
     background-color: var(--third);
     margin: 0;
-    position: fixed;
     box-shadow: 1px 1px 1px #e0dcdc;
     z-index: 10;
 
