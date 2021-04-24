@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import useFirebase from "hooks/useFirebase";
 import Presentation from "components/pages/inicio/Presentation";
 import ChatAnimation from "components/reutilizables/ChatAnimation";
@@ -11,6 +11,12 @@ import {Main} from "./styles";
 
 export default function Inicio(){
     const {signIn} = useFirebase();
+    
+    useEffect(() => {
+        window.scrollTo( 0, 0 );
+    },[]);
+   
+
     return(
         <Main>
             <Presentation />

@@ -9,12 +9,16 @@ export default function useFirebase(){
     const [user] = useAuthState(auth);
     const history = useHistory();
 
-    function signIn() {
+    async function signIn() {
         console.log("esta entrando")
         const provider = new firebase.auth.GoogleAuthProvider();
-        auth.signInWithPopup(provider);
-
-        if(user) history.push("/salas");
+        try{
+            await auth.signInWithPopup(provider)
+            history.push("/salas");
+        }catch(error){
+            console.log(error.message)
+        }
+  
 
     }
 

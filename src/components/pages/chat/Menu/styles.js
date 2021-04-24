@@ -4,7 +4,10 @@ export const HeaderStyle = styled.header`
     display: grid;
     grid-template-columns: 15rem 1fr 8rem;
     grid-template-rows: 1fr;
-    min-height: 4rem;
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    min-height: 50px;
     min-width: 100vw;
     max-width: 100vw;
     background-color: white;

@@ -47,3 +47,19 @@ export const rutas = [
     }
 
 ]
+
+export const noLogin = [
+    {
+        path: "/",
+        layout: LayoutPrincipal,
+        component: Inicio,
+        exact: true
+    },
+    {
+        path: "*",
+        layout: LayoutPrincipal,
+        component: ErrorComponent,
+        exact: true
+    }
+
+]

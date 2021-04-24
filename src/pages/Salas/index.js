@@ -1,9 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Titulo from "components/reutilizables/Titulo";
 import CardSala from "components/pages/salas/CardSala";
 import {DivStyle} from "./styles";
 
 export default function Salas(){
+
+    useEffect(() => {
+        window.scrollTo( 0, 0 );
+    },[]);
+   
+
     return(
         <main>
             <Titulo margin='2rem'>SELECCIONA UNA SALA PARA CONVERSAR</Titulo>
