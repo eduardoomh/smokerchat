@@ -7,6 +7,7 @@ export const messages = [
             background: "#ffc960",
             color: "black"
         },
+        inverted: false
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const messages = [
             background: "#ff606d",
             color: "white"
         },
+        inverted: false
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const messages = [
             background: "#37ff40",
             color: "white"
         },
+        inverted: true
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ export const messages = [
             background: "#fff455",
             color: "black"
         },
+        inverted: false
     },
     {
         id: 5,
@@ -43,42 +47,47 @@ export const messages = [
             background: "#fff455",
             color: "black"
         },
+        inverted: false
     },
     {
         id: 6,
-        text: "any fan for hip hop?",
-        user: {
-            word: "N",
-            background: "#37ff40",
-            color: "white"
-        },
-    },
-    {
-        id: 7,
         text: "i love TRAP 🤓",
         user: {
             word: "K",
             background: "#ffc960",
             color: "black"
         },
+        inverted: false
     },
     {
-        id: 8,
+        id: 7,
         text: "Nooooo 😡😡😡😡",
         user: {
             word: "M",
             background: "#ff606d",
             color: "white"
         },
+        inverted: false
     },
     {
-        id: 9,
+        id: 8,
         text: "👅😍😍😍😍",
         user: {
             word: "E",
             background: "#ff606d",
             color: "white"
         },
+        inverted: false
+    },
+    {
+        id: 9,
+        text: "hip hop?",
+        user: {
+            word: "Z",
+            background: "#37ff40",
+            color: "white"
+        },
+        inverted: true
     },
     {
         id: 10,
@@ -88,6 +97,7 @@ export const messages = [
             background: "#ffc960",
             color: "white"
         },
+        inverted: false
     },
     {
         id: 11,
@@ -97,5 +107,6 @@ export const messages = [
             background: "#fff455",
             color: "black"
         },
+        inverted: false
     },
 ]

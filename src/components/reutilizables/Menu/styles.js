@@ -7,11 +7,17 @@ export const Header = styled.header`
     position: fixed;
     min-height: 3rem;
     max-height: 3rem;
-    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
     background-color: var(--third);
     margin: 0;
     box-shadow: 1px 1px 1px #e0dcdc;
     z-index: 10;
+
+    @media (min-width: 800px){
+        grid-template-columns: 6rem 1fr 14rem;
+        
+    }
 
     p{
         display: flex;
@@ -30,5 +36,10 @@ export const Header = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (min-width: 800){
+            padding-right: 2rem;
+        }
     }
+
 `;
