@@ -19,6 +19,10 @@ export const FormStyle = styled.form`
         border-radius: 6px;
         font-size: 1.5rem;
         width: 15rem;
+
+        @media (min-width: 800px){
+            width: 38rem;
+        }
     }
 
     div{
@@ -26,4 +30,10 @@ export const FormStyle = styled.form`
         justify-content: flex-start;
         align-items: center;
     }
+
+    @media (min-width: 800px){
+        min-width: 800px;
+        max-width: 800px;
+    }
+
 `;

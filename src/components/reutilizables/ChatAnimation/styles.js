@@ -8,7 +8,6 @@ export const DivStyle = styled.div`
     min-height: 15rem;
     padding: 1rem;
     margin-left: .5rem;
-    border: 1rem solid white;
     overflow: hidden;
     max-height: 15rem;
 
@@ -21,8 +20,9 @@ export const DivStyle = styled.div`
     `}
 
     @media (min-width: 800px){
-        max-height: 23rem;
-        width: 30rem;
+        max-height: 27rem;
+        width: 37rem;
+        margin-left: 4rem;
     }
 `;
 
@@ -38,7 +38,7 @@ export const ArticleStyle = styled.article`
     animation-iteration-count: infinite;
 
     @media (min-width: 800px){
-        min-width: 30rem;
+        min-width: 35rem;
     }
 
     div{
@@ -52,8 +52,8 @@ export const ArticleStyle = styled.article`
         border: 1px solid black;
         border-radius: 50%;
         margin: 0 1rem;
-        background-color: ${props => props.background};
-        color: ${props => props.color};
+        background-color: var(--secondary);
+        color: white;
         
     }
 
@@ -62,7 +62,7 @@ export const ArticleStyle = styled.article`
         align-items: center;
         padding: .5rem .7rem;
         border-radius: 8px;
-        background-color: ${props => props.inverted === true ? 'var(--third)' : 'var(--fourth)' };
+        background-color: ${props => props.inverted === true ? 'var(--fourth)' : 'var(--third)' };
     }
 
     

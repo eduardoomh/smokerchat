@@ -6,6 +6,6 @@ export const H2Style = styled.h2`
     align-items: center;
     text-align: center;
     font-size: 1.6rem;
-    color: var(--secondary);
+    color: ${props => props.color === 'default' ? 'var(--secondary)' : props.color};
     margin: ${props => props.margin || '1rem 2rem'};
 `;

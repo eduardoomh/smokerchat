@@ -1,28 +1,37 @@
 import React from "react";
 import Parrafo from "components/reutilizables/Parrafo";
-import Logo from "Images/smokerchat.svg";
-import {DivStyle} from "./styles";
-import useWindowSize from "hooks/useWindowSize";
+import logo from "Images/logo.svg";
+import { DivStyle } from "./styles";
+import useMovil from "hooks/useMovil";
 
 export default function Presentation() {
-    const {width} = useWindowSize();
+    const { movil } = useMovil();
 
     return (
         <DivStyle>
             <div className="logo-container">
-                <img 
-                    alt="logo smokerchat" 
-                    src={Logo} 
-                    width={width <= 800 ? 400 : 450} 
-                    height={width <= 800 ? 64 : 80} 
+                <img
+                    alt="logo smokerchat"
+                    src="https://jesusmh.s3.us-east-2.amazonaws.com/avatares/smoker.jpg"
+                    width={movil ? 70 : 100}
+                    height={movil ? 70 : 100}
+                    className="logo-image"
+                />
+                <img
+                    alt="logo smokerchat"
+                    src={logo}
+                    width={movil ? 250 : 350}
+                    height={movil ? 80 : 100}
+                    className="logo-name"
                 />
             </div>
 
-            <Parrafo 
-                textAlign={width <= 800 ? 'center' : 'start'}
-                fontSize={width >= 800 && '1.6rem'}
+            <Parrafo
+                textAlign={movil ? 'center' : 'start'}
+                fontSize={!movil ? '1.6rem': '1.2rem'}
+                bold
             >
-                Salas de chat simples, para platicas simples y rapidas.
+                Salas de chat grupales, para conversar de distintos temas en comun.
             </Parrafo>
         </DivStyle>
     )

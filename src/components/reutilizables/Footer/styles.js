@@ -8,6 +8,8 @@ export const FooterStyle = styled.footer`
     background-color: var(--third);
     min-height: 10rem;
     box-shadow: 1px 1px 1px #e0dcdc;
+    border-top: 1px solid #e0e0e0;
+
 
     p{
         font-size: 1.2rem;

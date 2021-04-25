@@ -31,4 +31,9 @@ export const HeaderStyle = styled.header`
         align-items: center;
         min-height: 4rem;
     }
+
+    @media (min-width: 800px){
+        min-width: 800px;
+        max-width: 800px;
+    }
 `;

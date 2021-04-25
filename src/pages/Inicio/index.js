@@ -4,14 +4,13 @@ import Presentation from "components/pages/inicio/Presentation";
 import ChatAnimation from "components/reutilizables/ChatAnimation";
 import Parrafo from "components/reutilizables/Parrafo";
 import Button from "components/reutilizables/Button";
-import Titulo from "components/reutilizables/Titulo";
-import Sala from "components/pages/inicio/Sala";
-import useWindowSize from "hooks/useWindowSize";
+import SalaContainer from "components/pages/inicio/SalaContainer";
+import useMovil from "hooks/useMovil";
 import { Main, ButtonDiv} from "./styles";
 
 export default function Inicio() {
     const { signIn } = useFirebase();
-    const {width} = useWindowSize();
+    const {movil} = useMovil();
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -23,12 +22,12 @@ export default function Inicio() {
             <Main>
                 <Presentation textAlign='start' />
                 <ChatAnimation 
-                    row={width >= 800 ? '1/span 3' : false} 
-                    column={width >= 800 ? '1/2' : false} 
+                    row={!movil ? '1/span 3' : false} 
+                    column={!movil ? '1/2' : false} 
                 />
                 <Parrafo 
-                    justify={width >= 800 ? "flex-start" : "center"}
-                    fontSize={width >= 800 && '1.2rem'}
+                    justify={!movil ? "flex-start" : "center"}
+                    fontSize={!movil && '1.2rem'}
                     bold
                 >
                     ingresa y comienza  la conversacion
@@ -38,19 +37,7 @@ export default function Inicio() {
                     <Button size='big' action={signIn}>Ingresar con Google</Button>
                 </ButtonDiv>
             </Main>
-            <>
-                <Titulo>NUESTRAS SMOKER SALAS</Titulo>
-
-                <Sala emoji="👩‍💻" titulo="Programación">
-                    Java, Python, Javascript, C++, Ruby, PHP .... muchas opiniones divididas, todos en una misma sala 😈
-                </Sala>
-                <Sala emoji="⚽️" titulo="Futbol">
-                    Real Madrid, Barcelona, Chelsea, PSG, Juventus, River Plate... Mala idea mezclarlos a todos 😅
-                </Sala>
-                <Sala emoji="🎬" titulo="Series y Peliculas">
-                    Avengers, Dragon ball, Spider man, Game of thrones, Los simpsons ..... habra una guerra aqui dentro!!😲
-                </Sala>
-            </>
+            <SalaContainer />
         </>
 
     )

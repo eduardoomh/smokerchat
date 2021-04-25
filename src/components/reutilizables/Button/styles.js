@@ -22,7 +22,8 @@ export const ButtonStyle = styled.button`
     `}
 
     &:hover{
-        background-color: var(--fifth);
+        background-color: var(--fourth);
+        color: var(--secondary);
         cursor: pointer;
         transform: scale(1.1,1.1);
     }

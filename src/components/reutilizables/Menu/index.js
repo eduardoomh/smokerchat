@@ -18,7 +18,7 @@ export default function Menu() {
                     href="https://github.com/eduardoomh/smokerchat"
                     target="blank"
                 >
-                    <DiGithubBadge size={width <= 800 ? 32 : 42} />
+                    <DiGithubBadge size={width <= 800 ? 42 : 42} />
                 </a>
             </p>
             <div>

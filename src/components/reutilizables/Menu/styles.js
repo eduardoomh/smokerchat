@@ -9,9 +9,9 @@ export const Header = styled.header`
     max-height: 3rem;
     min-width: 100vw;
     max-width: 100vw;
-    background-color: var(--third);
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
     margin: 0;
-    box-shadow: 1px 1px 1px #e0dcdc;
     z-index: 10;
 
     @media (min-width: 800px){
