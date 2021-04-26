@@ -8,8 +8,9 @@ export default function ChatView(props){
     const {firestore, useCollectionData, auth} = useFirebase();
 
     const collectionRef = firestore.collection(type);
-    const query = collectionRef.orderBy('createdAt').limit(25);
+    const query = collectionRef.orderBy('createdAt', "desc").limit(30);
     const [messages] = useCollectionData(query, {idField: 'id'});
+    messages?.reverse();
 
     return(
         <DivContainer>

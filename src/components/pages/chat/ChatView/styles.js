@@ -14,5 +14,10 @@ display: flex;
         display: flex;
         flex-direction: column;
         scroll-behavior: smooth;
+
+        @media (min-width: 800px){
+            padding-bottom: 1rem;
+        }
+        
     }
 `;

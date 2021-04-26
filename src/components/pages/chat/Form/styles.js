@@ -22,6 +22,7 @@ export const FormStyle = styled.form`
 
         @media (min-width: 800px){
             width: 38rem;
+            font-size: 1.2rem;
         }
     }
 
