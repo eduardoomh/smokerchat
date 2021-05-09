@@ -5,7 +5,6 @@ export const DivStyle = styled.div`
     justify-content: ${props => props.justify ? props.justify : 'center'};
     align-items: center;
     margin: 2rem;
-    
 
     p{
         display: flex;

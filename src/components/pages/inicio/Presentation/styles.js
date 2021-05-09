@@ -7,9 +7,12 @@ export const DivStyle = styled.div`
         align-items: center;
         min-height: 7rem;
         background-color: #f6f6f6;
+        font-family: 'Source Serif Pro', serif;
 
         .logo-image{
             border-radius: 50%;
+            margin-top: 2rem;
+            
         }
 
         .logo-name{

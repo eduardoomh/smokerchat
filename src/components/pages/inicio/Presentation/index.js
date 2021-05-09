@@ -1,6 +1,6 @@
 import React from "react";
 import Parrafo from "components/reutilizables/Parrafo";
-import logo from "Images/logo.svg";
+import logo from "Images/smokerlogo.svg";
 import { DivStyle } from "./styles";
 import useMovil from "hooks/useMovil";
 
@@ -20,8 +20,8 @@ export default function Presentation() {
                 <img
                     alt="logo smokerchat"
                     src={logo}
-                    width={movil ? 250 : 350}
-                    height={movil ? 80 : 100}
+                    width={movil ? 250 : 380}
+                    height={movil ? 80 : 120}
                     className="logo-name"
                 />
             </div>

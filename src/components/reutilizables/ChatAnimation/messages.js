@@ -109,4 +109,14 @@ export const messages = [
         },
         inverted: false
     },
+    {
+        id: 12,
+        text: "YESSSSS",
+        user: {
+            word: "M",
+            background: "#ff606d",
+            color: "white"
+        },
+        inverted: false
+    },
 ]
